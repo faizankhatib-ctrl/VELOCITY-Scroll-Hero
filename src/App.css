@@ -1,0 +1,111 @@
+/* VELOCITY — Beyond the Ordinary
+ * Cinematic Styling System & Specialized Track Effects
+ */
+
+/* Technical background grid with dark graphite tint */
+.graphite-grid {
+  background-color: #0b0c10;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Subtle vignette around viewport edges */
+.cinematic-vignette {
+  background: radial-gradient(
+    circle at 50% 50%,
+    transparent 45%,
+    rgba(6, 7, 10, 0.7) 85%,
+    rgba(4, 5, 8, 0.95) 100%
+  );
+}
+
+/* Authentic Asphalt Road Surface */
+.road-surface {
+  background-color: #14161a;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, #191c22 0%, #111317 50%, #0d0f12 100%);
+  background-size: 20px 20px, 100% 100%;
+  box-shadow: 
+    inset 0 12px 24px rgba(0, 0, 0, 0.8),
+    inset 0 -12px 24px rgba(0, 0, 0, 0.8),
+    0 20px 45px rgba(0, 0, 0, 0.6);
+}
+
+/* Road Curb / Racetrack rumble strips on edges */
+.road-curb-top {
+  background: repeating-linear-gradient(
+    90deg,
+    #22262e 0,
+    #22262e 28px,
+    #06b6d4 28px,
+    #06b6d4 34px
+  );
+}
+
+.road-curb-bottom {
+  background: repeating-linear-gradient(
+    90deg,
+    #22262e 0,
+    #22262e 28px,
+    #0891b2 28px,
+    #0891b2 34px
+  );
+}
+
+/* Dashed lane marking */
+.road-center-line {
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.3) 0,
+    rgba(255, 255, 255, 0.3) 48px,
+    transparent 48px,
+    transparent 88px
+  );
+}
+
+/* Proportionally Contained Car Shadow & Ground Effect */
+.car-shadow {
+  filter: 
+    drop-shadow(0 14px 20px rgba(0, 0, 0, 0.85))
+    drop-shadow(-8px 0 25px rgba(6, 182, 212, 0.35));
+}
+
+/* Cyan Glowing Trail (Animated strictly via scaleX with transformOrigin: left center) */
+.glow-trail-cyan {
+  background: linear-gradient(
+    90deg,
+    rgba(6, 182, 212, 0.95) 0%,
+    rgba(34, 211, 238, 0.8) 75%,
+    rgba(103, 232, 249, 0.95) 100%
+  );
+  box-shadow: 
+    0 0 25px rgba(6, 182, 212, 0.65),
+    0 0 55px rgba(6, 182, 212, 0.35),
+    inset 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Spaced Letters Styling */
+.value-letter {
+  transition: color 0.25s ease, text-shadow 0.25s ease, opacity 0.25s ease;
+  user-select: none;
+}
+
+.value-letter.revealed {
+  color: #ffffff;
+  opacity: 1 !important;
+  text-shadow: 
+    0 0 12px rgba(6, 182, 212, 0.8),
+    0 0 35px rgba(6, 182, 212, 0.5);
+}
+
+/* Card glass aesthetics */
+.telemetry-card {
+  box-shadow: 
+    0 20px 40px -10px rgba(0, 0, 0, 0.7),
+    0 0 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
